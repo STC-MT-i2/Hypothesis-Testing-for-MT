@@ -1,7 +1,7 @@
 # Hypothesis-Testing-for-MT
   
 
-***Evaluate the BLEU score significance statistically compare Ref file and Tgt files among different machine translation systems***
+***Evaluate the BLEU score significance statistically comparing Ref file and Tgt files among different machine translation systems***
   
   
 
@@ -13,7 +13,7 @@
 ***The descriptions and usages are as followed:***
   
   
-----------------------------------------------**`ENGLISH VERSION`**-----------------------------------------------------
+--------------**`ENGLISH VERSION`**--------------
   
 
 1. **Function Description**: test whether the results of two translation systems are significant
@@ -46,8 +46,7 @@
   
   
     
-    
-----------------------------------------------**`CHINESE VERSION`**-----------------------------------------------------
+--------------**`CHINESE VERSION`**------------
   
   
 
