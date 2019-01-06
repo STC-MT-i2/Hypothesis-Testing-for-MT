@@ -1,7 +1,7 @@
 # Hypothesis-Testing-for-MT
   
 
-**Evaluate the BLEU score significance statistically compare Ref file and Tgt files among different machine translation systems**
+***Evaluate the BLEU score significance statistically compare Ref file and Tgt files among different machine translation systems***
   
   
 
@@ -10,7 +10,7 @@
   
   
   
-  
+***The descriptions and usages are as followed:***
   
   
 ----------------------------------------------**`ENGLISH VERSION`**-----------------------------------------------------
@@ -44,7 +44,9 @@
 
   
   
-
+  
+    
+    
 ----------------------------------------------**`CHINESE VERSION`**-----------------------------------------------------
   
   
@@ -74,3 +76,10 @@
 
   &ensp;&ensp; z>1.96, 显著性95%， z>2.57, 显著性99%
 
+---
+  
+  This reposity is C++ version, continuously welcome the contributions in other programming language versions ,like python etc.
+  
+  Updated by: **Liam**
+  
+  &ensp; 6 Jan. 2019
