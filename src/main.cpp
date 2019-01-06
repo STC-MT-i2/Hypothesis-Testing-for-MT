@@ -1,13 +1,10 @@
 /**
-SMT bleu sign test
-written by Zhongjun He, ICT, CAS
-zjhe@ict.ac.cn
-2008-01-07
+MT bleu sign test
 */
 
-//ÏÈ¼ÆËãbaselineµÄbleuÖµ£¬È»ºóË³ĞòÕÒ³ö¶Ô±ÈÏµÍ³ÖĞÓëbaseline²»Í¬µÄĞĞ£¬½øĞĞÌæ»»£¬Èç¹û¼ÆËã
-//³öµÄĞÂµÄbleuÖµ¸ßÓÚbaseline£¬ÄÇÃ´ËµÃ÷¶Ô±ÈÏµÍ³µÄÕâ¾ä»°½á¹ûÊÇºÃµÄ£¬Èç¹ûµÍÓÚbaseline£¬ËµÃ÷¶Ô±ÈÏµÍ³
-//Õâ¾ä»°µÄ·­ÒëÊÇ²»ºÃµÄ
+//å…ˆè®¡ç®—baselineçš„bleuå€¼ï¼Œç„¶åé¡ºåºæ‰¾å‡ºå¯¹æ¯”ç³»ç»Ÿä¸­ä¸baselineä¸åŒçš„è¡Œï¼Œè¿›è¡Œæ›¿æ¢ï¼Œå¦‚æœè®¡ç®—
+//å‡ºçš„æ–°çš„bleuå€¼é«˜äºbaselineï¼Œé‚£ä¹ˆè¯´æ˜å¯¹æ¯”ç³»ç»Ÿçš„è¿™å¥è¯ç»“æœæ˜¯å¥½çš„ï¼Œå¦‚æœä½äºbaselineï¼Œè¯´æ˜å¯¹æ¯”ç³»ç»Ÿ
+//è¿™å¥è¯çš„ç¿»è¯‘æ˜¯ä¸å¥½çš„
 
 #include "Eval.h"
 #include "Utils.h"
@@ -109,7 +106,7 @@ void main(int argc, char* argv[])
 
 
 
-	//¼ÆËãNgramĞÅÏ¢
+	//è®¡ç®—Ngramä¿¡æ¯
 
 	ngram_struct baseAll, sysAll;
 	for(i=0; i<baseTrans.size(); i++)
@@ -129,7 +126,7 @@ void main(int argc, char* argv[])
 	}
  //   cout << "sysAll " << sysAll << endl;
    
-	//¼ÆËãbleuÖµ
+	//è®¡ç®—bleuå€¼
     double bleuBase = BLEU(baseAll);
 	double bleuSys = BLEU(sysAll);
 	cout << "the baseline ngram: " << baseAll << endl;
@@ -150,11 +147,11 @@ void main(int argc, char* argv[])
 		{
 			all++;
 
-			change = change - baseNgram[i]; //¼õÈ¥baselineÏàÓ¦µÄngram
-			change = change + sysNgram[i]; //¼ÓÉÏÏàÓ¦µÄsystem  ngram
+			change = change - baseNgram[i]; //å‡å»baselineç›¸åº”çš„ngram
+			change = change + sysNgram[i]; //åŠ ä¸Šç›¸åº”çš„system  ngram
 			double newBleu = BLEU(change);
 
-			if(newBleu > bleuBase) //±äºÃÁË
+			if(newBleu > bleuBase) //å˜å¥½äº†
 			{
 				good++;
 				goodOut << "<newBleu: " << newBleu << " baseBleu: " << bleuBase << ">" << endl;
@@ -162,7 +159,7 @@ void main(int argc, char* argv[])
 			    goodOut << endl;
 				goodRate += newBleu - bleuBase;
 			}
-			else if (newBleu < bleuBase) //±ä»µÁË
+			else if (newBleu < bleuBase) //å˜åäº†
 			{
 				bad++;
 				badOut << "<newBleu: " << newBleu << " baseBleu: " << bleuBase << ">" << endl;
@@ -170,7 +167,7 @@ void main(int argc, char* argv[])
 				badOut << endl;
 				badRate += bleuBase - newBleu;
 			}
-		    else //ÏàµÈ
+		    else //ç›¸ç­‰
 			{
 				equal++;
 				equalOut << "<newBleu: " << newBleu << " baseBleu: " << bleuBase << ">" << endl;
