@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/smttrain/!svn/ver/22/trunk/SignTest_BLEU/src
+END
+Utils.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/smttrain/!svn/ver/22/trunk/SignTest_BLEU/src/Utils.cpp
+END
+SignTestBleu.sln
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/smttrain/!svn/ver/22/trunk/SignTest_BLEU/src/SignTestBleu.sln
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/smttrain/!svn/ver/22/trunk/SignTest_BLEU/src/main.cpp
+END
+Utils.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/smttrain/!svn/ver/22/trunk/SignTest_BLEU/src/Utils.h
+END
+Eval.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/smttrain/!svn/ver/22/trunk/SignTest_BLEU/src/Eval.cpp
+END
+SignTestBleu.ncb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/smttrain/!svn/ver/22/trunk/SignTest_BLEU/src/SignTestBleu.ncb
+END
+SignTestBleu.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/smttrain/!svn/ver/22/trunk/SignTest_BLEU/src/SignTestBleu.vcproj
+END
+Eval.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/smttrain/!svn/ver/22/trunk/SignTest_BLEU/src/Eval.h
+END
+SignTestBleu.suo
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/smttrain/!svn/ver/22/trunk/SignTest_BLEU/src/SignTestBleu.suo
+END

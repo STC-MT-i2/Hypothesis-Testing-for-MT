@@ -1,0 +1,40 @@
+8
+
+dir
+24
+http://10.28.0.1:8080/svnroot/smttrain/trunk/SignTest_BLEU/doc
+http://10.28.0.1:8080/svnroot/smttrain
+
+
+
+2008-01-09T03:08:45.589379Z
+22
+hzj
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+9c8ccf84-b533-0410-ba7c-8ee4b7611790
+
+readme.txt
+file
+
+
+
+
+2008-03-11T05:09:58.000000Z
+05593558055483631cfefefaca15cea2
+2008-01-09T03:08:45.589379Z
+22
+hzj
+
