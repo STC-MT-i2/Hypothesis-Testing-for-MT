@@ -2,7 +2,24 @@
 
 Evaluate the BLEU score significance statistically compare Ref file and Tgt file in machine translation
 
-----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------ENGLISH VERSION-----------------------------------------------------------
+
+[1] Function Describtion: test whether the results of two translation systems are significant
+
+[2] Command-line arguments: SignTestBleu -c -s source.sgm -r reference.sgm -t testoutput.sgm -b baseline.sgm
+
+[3] Data formats: Same as the format of NIST. This program outputs three files "good.xml"， "bad.xml" and "equal.xml" that represent the sentences in "testoutput.smg" perform better , worse and same quality as the sentences in "baseline.sgm" (Note that the translation quality is evaluated with BELU score)
+
+[4] Calculation Details:
+    
+    Comparing the different translation results in two files: testoutput.sgm and baseline.sgm , for example, if sentences s1 s2 and s3 are different, we initially replace the s1 s2 s3 sentences in baseline.sgm by using the counterpart sentences in testout.smg. then calculate the BLEU scores for the baseline file , if the aforementioned replacement enables the BLEU score to increase, we make the f(+)+=1, if the BLEU score decreases, then let f(-)+=1 , or if there is no change after replacing, then let f(0)+=1.
+    
+    How to calculate the value of Z: Z = |(n-N/2)/sqrt(N/4)|， here n= f(+)， N = f(+) + f(-)
+    
+    z>1.96, significance 95%， z>2.57, significance 99%
+     
+
+----------------------------------------------------CHINESE VERSION-----------------------------------------------------------
 
 [1] 本程序功能： 测试两个翻译系统的结果是不是显著的
 
