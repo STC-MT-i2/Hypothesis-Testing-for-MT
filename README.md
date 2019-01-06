@@ -1,6 +1,10 @@
 # Significance_BLEU_Score
 
+
+
 Evaluate the BLEU score significance statistically compare Ref file and Tgt file in machine translation
+
+
 
 ----------------------------------------------ENGLISH VERSION-----------------------------------------------------
 
@@ -17,7 +21,8 @@ Comparing the different translation results in two files: testoutput.sgm and bas
 How to calculate the value of Z: Z = |(n-N/2)/sqrt(N/4)|， here n= f(+)， N = f(+) + f(-)
     
 z>1.96, significance 95%， z>2.57, significance 99%
-     
+
+
 
 ----------------------------------------------CHINESE VERSION-----------------------------------------------------
 
