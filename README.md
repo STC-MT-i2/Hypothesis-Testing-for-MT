@@ -1,9 +1,18 @@
-# Significance_BLEU_Score 
+# Hypothesis-Testing-for-MT
   
 
-**Evaluate the BLEU score significance statistically compare Ref file and Tgt file in machine translation**
+**Evaluate the BLEU score significance statistically compare Ref file and Tgt files among different machine translation systems**
+  
   
 
+![avatar](https://github.com/alphadl/Hypothesis-Testing-for-MT/blob/master/img/Hypothesis-Testing-p1.jpg)
+![avatar](https://github.com/alphadl/Hypothesis-Testing-for-MT/blob/master/img/Hypothesis-Testing-p2.jpg)
+  
+  
+  
+  
+  
+  
 ----------------------------------------------**`ENGLISH VERSION`**-----------------------------------------------------
   
 
